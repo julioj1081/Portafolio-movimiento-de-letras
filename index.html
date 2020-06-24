@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+    <div class="container navbar">
+        <header>
+            <div class="logo">
+                <h1>Julioj</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#about" style="color: aliceblue; border-left: 1px solid white; border-right: 1px solid white; padding: 10px;">about me</a>
+                        <a href="#skills" style="color: aliceblue; border-right: 1px solid white; padding: 10px;">skill</a>
+                        <a href="#work" style="color: aliceblue; border-right: 1px solid white; padding: 10px;">work</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="container main-info-section">
+        <div class="text">
+            <h1>
+                <span>H</span>
+                <span class="m-left">i</span>
+                <span class="m-left">,</span>
+                <br>
+                <span>I</span>
+                <span class="m-left">'</span>
+                <span class="m-left">m</span>
+                <span class="name">J</span>
+                <span class="m-left name">u</span>
+                <span class="m-left name">l</span>
+                <span class="m-left name">i</span>
+                <span class="m-left name">o</span>
+                <span class="m-left">,</span>
+                <br>
+                <span>W</span>
+                <span class="m-left">e</span>
+                <span class="m-left">b</span>
+                <span>D</span>
+                <span class="m-left">e</span>
+                <span class="m-left">b</span>
+                <span class="m-left">s</span>
+                <span class="m-left">i</span>
+                <span class="m-left">g</span>
+                <span class="m-left">n</span>
+                <span class="m-left">e</span>
+                <span class="m-left">r</span>
+                <span class="m-left">.</span>
+            </h1>
+            <p>CSS / Javascript / React</p>
+            <a href="#contact">contact me</a>
+        </div>
+        <div class="profile-image">
+            <img src="img/profile-image.png" alt="">
+        </div>
+    </div>
+    <div class="container about" id="about">
+        <h1>About</h1>
+        <div class="about-me-info">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores ea vitae hic, a similique dignissimos ut dolore repellendus assumenda exercitationem tempora eius perspiciatis quos voluptatibus in! Eligendi aperiam voluptatum sequi.</p>
+        </div>
+        <img src="img/dotted-shape.png" alt="">
+    </div>
+
+    <div class="container skills" id="skills">
+        <h1>Skills</h1>
+        <p class="skills-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aut mollitia, magni perferendis minima voluptatum commodi consequatur, similique, et repudiandae facilis! Saepe suscipit tempore consequuntur tempora, molestias reprehenderit in ad.</p>
+        <div class="html">
+            <div class="tag-html">
+                <p>Html</p>
+            </div>
+            <div class="progressbar">
+                <div class="bar-html"></div>
+            </div>
+        </div>
+        <div class="html">
+            <div class="tag-css">
+                <p>Css</p>
+            </div>
+            <div class="progressbar">
+                <div class="bar-css"></div>
+            </div>
+        </div>
+        <div class="html">
+            <div class="tag-javascript">
+                <p>javascript</p>
+            </div>
+            <div class="progressbar">
+                <div class="bar-javascript"></div>
+            </div>
+        </div>
+        <div class="html">
+            <div class="tag-react">
+                <p>react</p>
+            </div>
+            <div class="progressbar">
+                <div class="bar-react"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container work" id="work">
+        <h1>work</h1>
+        <div class="work-category">
+            <button id="designing" class="active" onclick="showRequiredCategory(this)"> web designing</button>
+            <button id="animation" onclick="showRequiredCategory(this)"> web animation</button>
+            <button id="project" onclick="showRequiredCategory(this)"> react projects</button>
+        </div>
+        <div class="category-designing showCategory">
+            <a href=""><img src="img/1.png" alt=""></a>
+            <a href=""><img src="img/2.png" alt=""></a>
+            <a href=""><img src="img/3.png" alt=""></a>
+            <a href=""><img src="img/2.png" alt=""></a>
+            <a href=""><img src="img/3.png" alt=""></a>
+        </div>
+        <div class="category-animation hideCategory">
+            <a href=""><img src="img/1.png" alt=""></a>
+            <a href=""><img src="img/2.png" alt=""></a>
+            <a href=""><img src="img/3.png" alt=""></a>
+        </div>
+        <div class="category-project hideCategory">
+            <a href=""><img src="img/1.png" alt=""></a>
+            <a href=""><img src="img/2.png" alt=""></a>
+            <a href=""><img src="img/3.png" alt=""></a>
+            <a href=""><img src="img/2.png" alt=""></a>
+        </div>
+    </div>
+
+    <div class="container contact" id="contact">
+        <h1>contact</h1>
+        <form>
+            <input type="text" name="name" placeholder="full name">
+            <input type="email" placeholder="email">
+            <input type="email" placeholder="julioj1081@hotmail.com" disabled>
+            <textarea name="message" cols="30" rows="10" placeholder="message"></textarea>
+            <input type="submit">
+        </form>
+    </div>
+    <footer>
+        <hr>
+        <p>2020 Copyright. All Rights Reserved</p>
+    </footer>
+    <script src="js/ScrollMagic.min.js"></script>
+    <script src="js/animation.gsap.min.js"></script>
+    <script src="js/TimelineLite.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/CSSPlugin.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+<!--minuto 1.48
+    https://www.youtube.com/watch?v=ZZOlqX_772k&list=PLG73S_GvUh9iS-JnCambsJ_8AGYyo-EzH&index=66&t=78s-->
